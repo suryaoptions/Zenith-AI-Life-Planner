@@ -1,0 +1,7 @@
+{
+  "name": "Zenith AI Life Planner",
+  "description": "An intelligent life planning ecosystem that leverages Gemini AI to help users architect their ideal daily routines, set ambitious goals, and receive personalized life coaching insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

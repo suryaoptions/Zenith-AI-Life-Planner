@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith AI Life Planner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Cookiebot CMP - Google Certified -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="00000000-0000-0000-0000-000000000000" data-blockingmode="auto" type="text/javascript"></script>
+  <style>
+    :root {
+      --peach-gradient: linear-gradient(90deg, #ff7e5f, #feb47b);
+      --dashboard-gradient: linear-gradient(135deg, #4a90e2, #1c60b3);
+      --sky-blue: #87ceeb;
+      --deep-purple: #6a0dad;
+      --gold: #ffd700;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background: var(--dashboard-gradient);
+      background-attachment: fixed;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .left-hero-panel {
+      background-color: var(--sky-blue);
+      color: var(--deep-purple);
+    }
+
+    .btn-peach {
+      background: var(--peach-gradient);
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-peach:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+      transform: scale(1.05);
+    }
+
+    .footer-glass {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #e0e0e0;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    
+    #CookiebotWidget { display: none !important; }
+
+    /* Fix for charts visibility on dark background */
+    .recharts-cartesian-grid-horizontal line,
+    .recharts-cartesian-grid-vertical line {
+      stroke: rgba(255, 255, 255, 0.1);
+    }
+    .recharts-text {
+      fill: rgba(255, 255, 255, 0.7) !important;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
